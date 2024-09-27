@@ -1,0 +1,77 @@
+
+/* David */
+.kontaktGrid{
+    
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.kontaktGridItem{
+    display: grid;
+    grid-area: 0, 10, 0, 10;
+    border-style: dotted;
+    column-width: 8rem;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    background-color: rgb(174, 202, 255);
+}
+
+.divKontakt1 { grid-area: 1 / 1 / 2 / 2; }
+.divKontakt2 { grid-area: 1 / 2 / 2 / 4; }
+.divKontakt3 { grid-area: 2 / 3 / 3 / 4; }
+.divKontakt4 { grid-area: 2 / 1 / 3 / 3; }
+.divKontakt5 { grid-area: 3 / 1 / 4 / 2; }
+.divKontakt6 { grid-area: 3 / 2 / 4 / 4; }
+.divKontakt7 { grid-area: 4 / 3 / 5 / 4; }
+.divKontakt8 { grid-area: 4 / 1 / 5 / 3; }
+.divKontakt9 { grid-area: 5 / 1 / 6 / 2; }
+.divKontakt10 { grid-area: 5 / 2 / 6 / 4; }
+
+/* Milton */
+
+.wrapper {
+    display: grid;
+    position: relative;
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 5rem 12rem 12rem 12rem;
+    grid-template-areas:
+    "main main main item-a"
+    "item-b item-b item-c item c" ;
+}
+main {grid-area: main;}
+.item-a {grid-area: item-a;}
+.item-b {grid-area: item-a;}
+.item-c {grid-area: item-a;}
+
+/* Chie (header nav) */
+:root {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav {
+    max-width: 1000px;
+    height: 3rem;
+    background: #eee;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav img {
+    height: 50%;
+    margin: auto auto auto 1rem; 
+}
+
+nav a {
+    text-decoration: none;
+    color: #999;
+    margin: 1rem;
+}
+nav a:hover {
+    color: #222;
+}
