@@ -1,59 +1,100 @@
 
 /* David */
-.kontaktGrid{
-    
+.kontaktGrid {
+
     display: grid;
     gap: 10px;
     padding: 10px;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    width: 100%;
 }
 
-.kontaktGridItem{
+.kontaktGridItem {
     display: grid;
-    grid-area: 0, 10, 0, 10;
-    border-style: dotted;
-    column-width: 8rem;
+    /* border-style: dotted; */
     text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
-    background-color: rgb(174, 202, 255);
+    font-size: 24px;
     max-height: 250px;
 }
 
-.kontaktBild{
+.kontaktBild {
     display: block;
     margin: auto;
     max-height: 250px;
 }
 
-.divKontakt1 { grid-area: 1 / 1 / 2 / 2; }
-.divKontakt2 { grid-area: 1 / 2 / 2 / 4; }
-.divKontakt3 { grid-area: 2 / 3 / 3 / 4; }
-.divKontakt4 { grid-area: 2 / 1 / 3 / 3; }
-.divKontakt5 { grid-area: 3 / 1 / 4 / 2; }
-.divKontakt6 { grid-area: 3 / 2 / 4 / 4; }
-.divKontakt7 { grid-area: 4 / 3 / 5 / 4; }
-.divKontakt8 { grid-area: 4 / 1 / 5 / 3; }
-.divKontakt9 { grid-area: 5 / 1 / 6 / 2; }
-.divKontakt10 { grid-area: 5 / 2 / 6 / 4; }
+.divKontakt1 {grid-area: 1 / 1 / 2 / 2;}
+.divKontakt2 {grid-area: 1 / 2 / 2 / 4;}
+.divKontakt3 {grid-area: 2 / 3 / 3 / 4;}
+.divKontakt4 {grid-area: 2 / 1 / 3 / 3;}
+.divKontakt5 {grid-area: 3 / 1 / 4 / 2;}
+.divKontakt6 {grid-area: 3 / 2 / 4 / 4;}
+.divKontakt7 {grid-area: 4 / 3 / 5 / 4;}
+.divKontakt8 {grid-area: 4 / 1 / 5 / 3;}
+.divKontakt9 {grid-area: 5 / 1 / 6 / 2;}
+.divKontakt10 {grid-area: 5 / 2 / 6 / 4;}
+
+@media screen and (max-width: 700px) {
+    .kontaktGrid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .kontaktGridItem {
+        width: 100%;
+        max-height: 600px;
+    }
+
+    .divKontakt1 {grid-area: 1 / 1 / 2 / 2;}
+    .divKontakt2 {grid-area: 2 / 1 / 3 / 2;}
+    .divKontakt3 {grid-area: 3 / 1 / 4 / 2;}
+    .divKontakt4 {grid-area: 4 / 1 / 5 / 2;}
+    .divKontakt5 {grid-area: 5 / 1 / 6 / 2;}
+    .divKontakt6 {grid-area: 6 / 1 / 7 / 2;}
+    .divKontakt7 {grid-area: 7 / 1 / 8 / 2;}
+    .divKontakt8 {grid-area: 8 / 1 / 9 / 2;}
+    .divKontakt9 {grid-area: 9 / 1 / 10 / 2;}
+    .divKontakt10 {grid-area: 10 / 1 / 11 / 2;}
+}
 
 /* Milton */
 
-.wrapper {
+.container {
     display: grid;
-    position: relative;
-    justify-items: center;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 5rem 12rem 12rem 12rem;
-    grid-template-areas:
-    "main main main item-a"
-    "item-b item-b item-c item c" ;
+    justify-content: space-between; 
+    gap: 1rem; 
+    flex-wrap: wrap; 
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 12rem 12rem 12rem 12rem;
+    grid-template-areas: 
+    "card1 card1 card2 card2 card3 card3"
+    "card4 card4 card4 card4 card4 card4";
+   
 }
-main {grid-area: main;}
-.item-a {grid-area: item-a;}
-.item-b {grid-area: item-a;}
-.item-c {grid-area: item-a;}
+
+.card1,.card2, .card3, .card4 {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 22%; 
+    text-align: center;
+}
+
+.card h3 {
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    color: #555;
+    font-size: clamp(1rem, 2.5vw, 2rem);
+}
+
+.card1{grid-area: card1;}
+.card2{grid-area: card2;}
+.card3{grid-area: card3;}
+.card4{grid-area: card4;}
+
 
 /* Chie (header nav) */
 :root {
@@ -67,7 +108,7 @@ body {
 }
 
 header {
-    background-color: #eee;
+    background-color: #f8f8f8; /* 少しグレーの背景色 */
 }
 
 .navbar {
@@ -77,6 +118,7 @@ header {
     max-width: 1200px;
     margin: 0 auto;
     padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 影を追加 */
 }
 
 .logo-img {
@@ -85,7 +127,7 @@ header {
 }
 
 .logo {
-    font-size: clamp(1.5rem, 2vw + 1rem, 2rem);
+    font-size: clamp(1.5rem, 5vw, 3rem);
     font-weight: bold;
 }
 
@@ -102,12 +144,13 @@ header {
 .nav-links a {
     text-decoration: none;
     color: #333;
-    font-size: clamp(1rem, 1.5vw + 0.5rem, 1.25rem);
+    font-size: clamp(1rem, 1.25rem, 1.5rem);
 }
 
 .nav-links a:hover {
     color: #007BFF;
 }
+
 
 /* andreas footer under detta*/
 .site-footer {
@@ -172,10 +215,29 @@ header {
     color: #bbb;
 }
 
+@media (max-width: 1024px) {
+
+    .container{
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4";
+    }
+}
 
 @media (max-width: 768px) {
     .footer-container {
         grid-template-columns: 1fr; 
         text-align: center;
+    }
+
+    .container {
+        grid-template-columns: 1fr; 
+        grid-template-areas:
+            "card1"
+            "card2"
+            "card3"
+            "card4";
+       
     }
 }
