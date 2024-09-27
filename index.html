@@ -3,21 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Den här hemsidan är kort introduktion till team Linköping 2 på Chas Academy's Fullstack Javascript utbildning">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 
 <body>
-    <!--Chie(header nav)-->
+    
+       <!-- Chie (header nav) -->
     <header>
         <nav class="navbar">
-            <div class="logo">MyWebsite</div>
+            <img src="img/chas-academy.png" alt="Chas Academy Logo" class="logo-img">
+            <div class="logo" role="title">Team Linköping 2</div>
             <ul class="nav-links">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
+                <li><a href="#" role="link" aria-label="Länk till huvudsidan">HOME</a></li>
+                <li><a href="#" role="link" aria-label="Länk till 'Om oss' sidan">ABOUT</a></li>
             </ul>
         </nav>
     </header>
+    
     
     
     
@@ -54,23 +60,23 @@
     
     <!-- David (kontakt)-->
     <div class="kontaktGrid">
-        <div class="kontaktGridItem divKontakt1">image</div>
+        <div class="kontaktGridItem divKontakt1"><img class="kontaktBild" src="https://cdn3.vectorstock.com/i/1000x1000/18/97/male-office-worker-or-clerk-sitting-at-desk-vector-22711897.jpg"></div>
         <div class="kontaktGridItem divKontakt2">Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
             printer took a galley of type and scrambled it to make a type specimen book.</div>
-        <div class="kontaktGridItem divKontakt3">image</div>
+        <div class="kontaktGridItem divKontakt3"><img class="kontaktBild" src="https://cdn3.vectorstock.com/i/1000x1000/18/97/male-office-worker-or-clerk-sitting-at-desk-vector-22711897.jpg"></div>
         <div class="kontaktGridItem divKontakt4">Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
             printer took a galley of type and scrambled it to make a type specimen book.</div>
-        <div class="kontaktGridItem divKontakt5">image</div>
+        <div class="kontaktGridItem divKontakt5"><img class="kontaktBild" src="https://cdn3.vectorstock.com/i/1000x1000/18/97/male-office-worker-or-clerk-sitting-at-desk-vector-22711897.jpg"></div>
         <div class="kontaktGridItem divKontakt6">Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
             printer took a galley of type and scrambled it to make a type specimen book.</div>
-        <div class="kontaktGridItem divKontakt7">image</div>
+        <div class="kontaktGridItem divKontakt7"><img class="kontaktBild" src="https://cdn3.vectorstock.com/i/1000x1000/18/97/male-office-worker-or-clerk-sitting-at-desk-vector-22711897.jpg"></div>
         <div class="kontaktGridItem divKontakt8">Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
             printer took a galley of type and scrambled it to make a type specimen book.</div>
-        <div class="kontaktGridItem divKontakt9">image</div>
+        <div class="kontaktGridItem divKontakt9"><img class="kontaktBild" src="https://cdn3.vectorstock.com/i/1000x1000/18/97/male-office-worker-or-clerk-sitting-at-desk-vector-22711897.jpg"></div>
         <div class="kontaktGridItem divKontakt10">Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
             printer took a galley of type and scrambled it to make a type specimen book.</div>
@@ -82,15 +88,38 @@
 
 
 <!--andreas under här (footer)-->
-<footer class="">
-   <div class="">
-    <section> 
-        <h3> about us </h3>
-        <ul>
-            
-        </ul>
+<footer class="site-footer">
+    <div class="footer-container">
+        <section class="footer-about">
+            <h2>Om oss</h2>
+            <p>Vi är ett trevligt gäng som precis påbörjat våran utbildning till att bli fullstackare inom javascript. Hör gärna av er till oss om ni har några frågor eller funderingar! </p>
+        </section>
 
-    </section>
-</div>
+        
+        <section class="footer-contact">
+            <h2>Kontakt</h2>
+            <ul>
+                <li><b>Email: </b><a href="linköpingboilerroom2@outlook.se" aria-label="Länk till vår email adress">linköpingboilerroom2@outlook.se</a></li>
+                <li><b>Telefon: </b> 070 555 555 555 22 </li>
+                <li><b>Adress:</b> Scandic hotell linköping boiler room 2 </li>
+            </ul>
+        </section>
+
+        <section class="footer-social">
+            <h2>Följ oss</h2>
+            <ul class="social-links">
+                <li><a href="https://facebook.com" target="_blank" aria-label="Länk till vår Facebooksida"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                <li><a href="https://twitter.com" target="_blank" aria-label="Länk till vårt Twitterkonto"><i class="fab fa-twitter"></i> Twitter</a></li>
+                <li><a href="https://instagram.com" target="_blank" aria-label="Länk till vårt Instagramkonto"><i class="fab fa-instagram"></i> Instagram</a></li> 
+            </ul>
+        </section>
+        
+        
+    </div>
+
+    
+    <div class="footer-bottom">
+        <p>&copy; 2024 boiler room linköping grupp 2. Kanske, kanske inte all Rights Reserved.</p>
+    </div>
 </footer>
 </html> 
