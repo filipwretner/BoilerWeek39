@@ -161,6 +161,10 @@ header {
     color: #f39c12;
 }
 
+.navIcon {
+    display: none;
+}
+
 
 /* andreas footer under detta*/
 .site-footer {
@@ -249,5 +253,14 @@ header {
             "card3"
             "card4";
        
+    }
+
+    .navText {
+        display: none;
+    }
+
+    .navIcon {
+        display: inline-block;
+        font-size: 2rem
     }
 }
