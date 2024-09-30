@@ -1,3 +1,7 @@
+body {
+    background-color: #2c3e50;
+    color: #d6d6d6;
+}
 
 /* David */
 .kontaktGrid {
@@ -15,6 +19,9 @@
     text-align: center;
     font-size: 24px;
     max-height: 250px;
+    background-color: #5b5c63;
+    border-radius: 8px;
+    border: 1px solid #ffffff;
 }
 
 .kontaktBild {
@@ -34,6 +41,9 @@
 .divKontakt9 {grid-area: 5 / 1 / 6 / 2;}
 .divKontakt10 {grid-area: 5 / 2 / 6 / 4;}
 
+.divKontakt2, .divKontakt4, .divKontakt6, .divKontakt8, .divKontakt10 {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
 @media screen and (max-width: 700px) {
     .kontaktGrid {
         grid-template-columns: repeat(1, 1fr);
@@ -64,21 +74,22 @@
     gap: 1rem; 
     flex-wrap: wrap; 
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 12rem 12rem 12rem 12rem;
+    grid-template-rows: 12rem 12rem;
     grid-template-areas: 
     "card1 card1 card2 card2 card3 card3"
     "card4 card4 card4 card4 card4 card4";
-   
+   padding: 10px;
 }
 
 .card1,.card2, .card3, .card4 {
-    background-color: #ffffff;
-    border: 1px solid #ddd;
+    background-color: #5b5c63;
+    border: 1px solid #ffffff;
     border-radius: 8px;
     padding: 1rem;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     flex: 1 1 22%; 
     text-align: center;
+    font-size: clamp (0.9rem, 2.5vw, 1rem);
 }
 
 .card h3 {
@@ -87,7 +98,6 @@
 
 .card p {
     color: #555;
-    font-size: clamp(1rem, 2.5vw, 2rem);
 }
 
 .card1{grid-area: card1;}
@@ -108,7 +118,7 @@ body {
 }
 
 header {
-    background-color: #f8f8f8; /* 少しグレーの背景色 */
+    background-color: #2c3e50; /* 少しグレーの背景色 */
 }
 
 .navbar {
@@ -143,12 +153,12 @@ header {
 
 .nav-links a {
     text-decoration: none;
-    color: #333;
+    color: #ffffff;
     font-size: clamp(1rem, 1.25rem, 1.5rem);
 }
 
 .nav-links a:hover {
-    color: #007BFF;
+    color: #f39c12;
 }
 
 
