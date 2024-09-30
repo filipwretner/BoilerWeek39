@@ -10,7 +10,7 @@ Frontend skickar sedan den datan till backend med en HTTP POST-request, detta g�
 
 Backend tar emot datan och validerar att det är ifyllt korrekt samt är säkert. Med säkert menas att det exempelvis inte innehåller några code-injections som kan skada backendstrukturen.  
 
-Om den ifyllda informationen inte är ifylld korrekt eller ses som en säkerhetsrisk så skickas ett felmeddelande tillbaka till frontend och användaren får börja om från början. Om allt är ifyllt korrekt sparas datan i backend och sedan skickas ett bekräftelsemejl till den ifyllda e-postadressen samt att backend skickar tillbaka en HTTP respons till frontend.
+Om den ifyllda informationen inte är ifylld korrekt eller ses som en säkerhetsrisk så skickas ett felmeddelande tillbaka till frontend och användaren får börja om från början. Om allt är ifyllt korrekt sparas datan i backend och sedan skickas ett bekräftelsemejl till den ifyllda e-postadressen samt att backend skickar tillbaka en HTTP respons till frontend, återigen via API.
 
 När e-posten är verifierad och frontend tagit emot HTTP responsen så uppdateras sidan och användaren börjar nästa steg i registreringen. 
 
